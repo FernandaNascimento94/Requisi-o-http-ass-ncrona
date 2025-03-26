@@ -1,0 +1,16 @@
+img 
+{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: solid rgb(99, 10, 182) 4px;
+
+}
+
+body
+{
+background-color:aqua;
+color:black;
+font-family:'Courier New', Courier, monospace;
+text-align: center;
+}
