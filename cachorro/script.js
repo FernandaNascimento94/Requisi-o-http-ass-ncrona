@@ -20,12 +20,12 @@ function atualizarImagemAleatoria() {
     let imagens = document.querySelectorAll(".fotoDeCachorro");
 
     if (imagens.length > 0) {
-        let indexAleatorio = Math.floor(Math.random() * imagens.length); 
+        let idAleatorio = Math.floor(Math.random() * 9); 
         fetch("https://dog.ceo/api/breeds/image/random")
             .then(response => response.json())
             .then(data => {
                 if (data.status === "success") {
-                    imagens[indexAleatorio].src = data.message; 
+                    imagens[idAleatorio].src = data.message; 
                 }
             });
     }
